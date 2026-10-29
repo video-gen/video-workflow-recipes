@@ -47,6 +47,6 @@ Uses MoviePy2.x imports, H.264/AAC and yuv420p. Accepts any local video you have
 
 ## Versions and license
 
-Remotion packages are pinned together at4.0.538, React19.2.1, TypeScript5.9.3, MoviePy2.2.1. A small ambient declaration bridges Remotion's published Bun Timer reference to Node's timeout type; third-party declaration checking remains enabled. Explicit type inclusion prevents duplicate WebCodecs ambient declarations. The existing transitive Zod dependency is overridden to4.6.6 to address GHSA-mrhx-c7xc-m3w5.
+Remotion packages are pinned together at4.0.538, React19.2.1, TypeScript5.9.3, MoviePy2.2.1. A small ambient declaration bridges Remotion's published Bun Timer reference to Node's timeout type; third-party declaration checking remains enabled. Explicit type inclusion prevents duplicate WebCodecs ambient declarations. The existing transitive Zod dependency is overridden to4.6.6 to address GHSA-mrhx-c7xc-m3w5. Remotion emits a version advisory because it expects Zod4.5.4; the patched4.6.6 override passes the renders and checks here.
 
 The source is MIT licensed; Remotion has [separate commercial license requirements](https://www.remotion.dev/license). Synthetic demo art is included. Maintained by VideoGen, with AI assistance. Independent examples, not endorsements by Remotion or MoviePy.
