@@ -1,0 +1,26 @@
+{
+  "name": "videogen-video-recipes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.tsx ProductAd previews/product-ad.mp4",
+    "overlay": "remotion render src/index.tsx OfferPreview previews/offer.mp4",
+    "still": "remotion still src/index.tsx ProductAd previews/product-ad.png --frame=60"
+  },
+  "dependencies": {
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.538",
+    "@types/react": "19.2.1",
+    "@types/react-dom": "19.2.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}

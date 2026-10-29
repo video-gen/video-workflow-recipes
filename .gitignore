@@ -1,0 +1,6 @@
+node_modules/
+.venv/
+__pycache__/
+remotion/public/generated.mp4
+moviepy/out/
+.env
