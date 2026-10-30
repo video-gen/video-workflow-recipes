@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pydantic-ai-videogen"
+version = "2.5.3"
+description = "Official Pydantic AI tools for the VideoGen API. Generate videos, images, voiceovers, sound effects, music, and avatars from any Pydantic AI agent."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = [
+    "videogen",
+    "pydantic-ai",
+    "pydantic",
+    "ai",
+    "agents",
+    "tools",
+    "text-to-video",
+    "ai-video-generation",
+    "text-to-speech",
+    "image-generation",
+]
+
+dependencies = [
+    "videogen>=2.5.3",
+    "pydantic-ai-slim>=0.0.30",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://videogen.io"
+Documentation = "https://github.com/video-gen/video-workflow-recipes/tree/main/integrations/pydantic-ai-videogen#readme"
+Repository = "https://github.com/video-gen/video-workflow-recipes"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pydantic_ai_videogen"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: live tests that call the VideoGen API (require VIDEOGEN_API_KEY)",
+]
+testpaths = ["tests"]
