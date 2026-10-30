@@ -1,0 +1,65 @@
+{
+  "name": "@videogen/ai-tool",
+  "version": "2.5.3",
+  "description": "Official Vercel AI SDK tools for the VideoGen API. Generate videos, images, voiceovers, sound effects, music, and avatars from any AI SDK agent.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "videogen",
+    "vercel-ai-sdk",
+    "ai-sdk",
+    "ai",
+    "tools",
+    "agent",
+    "text-to-video",
+    "ai-video-generation",
+    "text-to-speech",
+    "image-generation"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "ai": "^5.0.0 || ^7.0.0",
+    "zod": "^3.25.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "@videogen/sdk": "^2.5.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^20.19.4",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "ai": "^7.0.158",
+    "eslint": "^9.14.0",
+    "tsup": "^8.5.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.13.0",
+    "zod": "^4.4.3"
+  },
+  "homepage": "https://videogen.io/videogen-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/video-gen/video-workflow-recipes.git",
+    "directory": "integrations/ai-sdk-videogen"
+  }
+}

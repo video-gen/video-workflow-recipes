@@ -58,5 +58,7 @@ Official VideoGen tool adapters, with optional tool allowlists and account/API-k
 - [CrewAI](integrations/crewai-videogen)
 - [Pydantic AI](integrations/pydantic-ai-videogen)
 - [OpenAI Agents SDK for Python](integrations/openai-agents-videogen)
+- [Vercel AI SDK](integrations/ai-sdk-videogen)
+- [OpenAI Agents SDK for TypeScript](integrations/openai-agents-typescript)
 
 Generation uses VideoGen credits. Obtain user approval before credit-consuming calls; use read-only tool allowlists when appropriate.
