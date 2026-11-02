@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "crewai-videogen"
-version = "2.5.3"
+version = "2.5.4"
 description = "Official CrewAI tools for the VideoGen API. Generate videos, images, voiceovers, sound effects, music, and avatars from any CrewAI agent or crew."
 readme = "README.md"
 license = { text = "MIT" }

@@ -101,3 +101,7 @@ MIT
 Generation and editing use VideoGen account credits. Obtain user approval before credit-consuming calls, and restrict the `include` list for agents that only need read access. Keep API keys in environment variables and out of shared transcripts.
 
 [VideoGen](https://videogen.io/) · [MCP setup](https://videogen.io/videogen-mcp)
+
+## 2.5.4
+
+Fix polling after workflow, media-tool and export starts to use the Python SDK’s normalized response keys. No API capabilities or dependency requirements changed.

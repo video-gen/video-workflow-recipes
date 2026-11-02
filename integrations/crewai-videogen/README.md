@@ -100,3 +100,7 @@ MIT
 Generation and editing use your VideoGen account credits. Obtain user approval before invoking credit-consuming tools. Restrict the `include` list when an agent only needs read access. Keep API keys in server-side environment variables and out of shared transcripts.
 
 [VideoGen](https://videogen.io/) · [MCP setup](https://videogen.io/videogen-mcp) · [Source](https://github.com/video-gen/video-workflow-recipes/tree/main/integrations/crewai-videogen)
+
+## 2.5.4
+
+Fix polling after workflow, media-tool and export starts to use the Python SDK’s normalized response keys. No API capabilities or dependency requirements changed.
