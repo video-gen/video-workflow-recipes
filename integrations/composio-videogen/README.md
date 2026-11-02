@@ -18,7 +18,10 @@ Get an API key from [app.videogen.io/api](https://app.videogen.io/api) and set i
 
 ```bash
 export VIDEOGEN_API_KEY="your_api_key"
+export COMPOSIO_API_KEY="your_composio_api_key"
 ```
+
+`COMPOSIO_API_KEY` authenticates the Composio client used by the session example; `VIDEOGEN_API_KEY` authenticates VideoGen.
 
 ## Usage
 
