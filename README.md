@@ -63,3 +63,12 @@ Official VideoGen tool adapters, with optional tool allowlists and account/API-k
 - [OpenAI Agents SDK for TypeScript](integrations/openai-agents-typescript)
 
 Generation uses VideoGen credits. Obtain user approval before credit-consuming calls; use read-only tool allowlists when appropriate.
+
+## Chat integrations under review
+
+Source candidates wrapping [VideoGen’s hosted MCP](https://videogen.io/videogen-mcp):
+
+- [Open WebUI Python Tool](integrations/open-webui-videogen): per-user API keys and live tool/schema discovery.
+- [Dify tool plugin](integrations/dify-videogen): provider credentials, discovery and MCP tool invocation.
+
+These sources have local SDK/package checks; host-specific authentication, credential isolation and end-to-end video validation remain pending. Neither is a published marketplace listing. Customers use their own VideoGen accounts and credits.

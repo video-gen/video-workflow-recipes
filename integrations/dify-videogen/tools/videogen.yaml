@@ -1,0 +1,60 @@
+identity:
+  name: videogen_mcp
+  author: videogen
+  label:
+    en_US: VideoGen MCP
+description:
+  human:
+    en_US: Discover and call VideoGen video/media tools. https://videogen.io/videogen-mcp
+  llm: Discover current VideoGen tools, retrieve a chosen tool’s input/output schemas,
+    then call it with valid JSON arguments. Generation/export may consume credits
+    and edits/deletions change account resources. Obtain approval as required for
+    the user’s requested operation. MCP isError indicates failure; asynchronous run
+    starts are not completed videos.
+parameters:
+- name: action
+  type: select
+  required: true
+  label:
+    en_US: action
+  human_description:
+    en_US: Discover tools and exact schemas before calling. Calls can change resources
+      and consume credits; follow user authorization and budget.
+  llm_description: Discover tools and exact schemas before calling. Calls can change
+    resources and consume credits; follow user authorization and budget.
+  form: llm
+  default: discover
+  options:
+  - value: discover
+    label:
+      en_US: discover
+  - value: call
+    label:
+      en_US: call
+- name: tool_name
+  type: string
+  required: false
+  label:
+    en_US: tool_name
+  human_description:
+    en_US: Exact discovered tool name, or empty to list tools.
+  llm_description: Exact discovered tool name, or empty to list tools.
+  form: llm
+  default: ''
+- name: arguments_json
+  type: string
+  required: false
+  label:
+    en_US: arguments_json
+  human_description:
+    en_US: JSON object matching the selected tool inputSchema. Never include credentials.
+      For asynchronous starts retain the run id, check status and export the finished
+      video. Do not retry writes automatically.
+  llm_description: JSON object matching the selected tool inputSchema. Never include
+    credentials. For asynchronous starts retain the run id, check status and export
+    the finished video. Do not retry writes automatically.
+  form: llm
+  default: '{}'
+extra:
+  python:
+    source: tools/videogen.py

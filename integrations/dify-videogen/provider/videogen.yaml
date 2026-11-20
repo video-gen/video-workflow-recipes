@@ -1,0 +1,27 @@
+identity:
+  author: videogen
+  name: videogen
+  label:
+    en_US: VideoGen
+  description:
+    en_US: Create videos and product ads using your own VideoGen account. https://videogen.io/videogen-mcp
+  icon: logo.png
+  tags:
+  - videos
+  - productivity
+credentials_for_provider:
+  videogen_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: VideoGen API key
+    placeholder:
+      en_US: Your VideoGen API key
+    help:
+      en_US: Create a key in your VideoGen account
+    url: https://app.videogen.io/api
+tools:
+- tools/videogen.yaml
+extra:
+  python:
+    source: provider/videogen.py
